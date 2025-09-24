@@ -1,0 +1,13 @@
+
+    .album{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-left: 150px;
+}
+.album img{
+    height: 450px;
+    width: 550px;
+    margin: 25px;
+
+}

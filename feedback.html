@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="feed.css">
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <div class="menu">
+        <nav>
+              <!-- <label class="logo">Ichalkaranji</label>-->
+      
+              <ul>
+                <li><a href="home.html">मुख्यपृष्ठ</a></li>
+                <li><a href="order.html">ऑर्डर </a></li>
+                <li><a href="image.html">प्रतिमा</a></li>
+                <li><a href="about.html">आमच्या बद्दल</a></li>
+                <li><a href="#">अभिप्राय</a></li> 
+              </ul>
+          </nav>
+      </div>
+      <div class="main1">
+        <h1 class="ord">आम्ही तुमच्या अभिप्रायाची प्रतीक्षा करतो!!</h1>
+        <div class="order">
+    <form action="submit_feedback.php" method="post">
+        <div class="form-group">
+            <label for="name">नाव (पर्यायी):</label>
+            <input type="text" name="name" id="name">
+        </div>
+        <div class="form-group">
+            <label for="email">ईमेल (पर्यायी):</label>
+            <input type="email" name="email" id="email">
+        </div>
+        <div class="form-group">
+            <label for="feedback">आपला अभिप्राय:</label>
+            <textarea name="feedback" id="feedback" rows="5" required></textarea>
+        </div>
+        
+        <button type="submit">जमा करा</button>
+    </form>
+    </div>
+    </div>
+</body>
+</html>

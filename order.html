@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Form</title>
+    <link rel="stylesheet" href="order.css">
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <div class="menu">
+        <nav>
+              <!-- <label class="logo">Ichalkaranji</label>-->
+      
+              <ul>
+                <li><a href="home.html">मुख्यपृष्ठ</a></li>
+                <li><a href="#">ऑर्डर </a></li>
+                <li><a href="image.html">प्रतिमा</a></li>
+                <li><a href="about.html">आमच्या बद्दल</a></li>
+                <li><a href="feedback.html">अभिप्राय</a></li> 
+              </ul>
+          </nav>
+      </div>
+<div class="main1">
+    <div class="order">
+        <h1 class="ord">ऑर्डर फॉर्म</h1><br><br>
+
+    <form action="submit_order.php" method="post"> <div class="form-group">
+            <label for="name">नाव:</label>
+            <input type="text" name="name" id="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">ईमेल:</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <div class="form-group">
+            <label for="product">उत्पादने:</label>
+            <select name="product" id="product" required>
+                <option value="">उत्पादन निवडा</option>
+                <option value="product1">को - 86032</option>
+                <option value="product2">कोएम 0265</option>
+                <option value="product3">MS 10001</option>
+                <option value="product4">व्ही एस आय 08005</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="quantity">रोपांची संख्या:</label>
+            <input type="number" name="quantity" id="quantity" min="1" required>
+        </div>
+        <button type="submit">जमा करा</button>
+    </form>
+</div>
+</div>
+</body>
+</html>
